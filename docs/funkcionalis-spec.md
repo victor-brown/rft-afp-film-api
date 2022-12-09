@@ -2,7 +2,7 @@
 
 ## 1. A rendszer céljai
 A fejlesztlés célja egy filmeket katalogizáló rendszer létrehozása, ahol a filmeket különböző módon van lehetőség megjeleníteni, kategorizálni és a filmek adatait megfelelő jogosultsággal szerkeszteni vagy akár törölni is.
-A rendszerben két jogosultsági szint kerül meghatározásra. Az olavasó felhasználó a meglévő rendszerben tudja böngészni az adatokat, míg az adminisztrátornak ezen felül lehetősége van szerkeszetni vagy akár törölni is.
+A rendszerben két jogosultsági szint kerül meghatározásra. Az olavasó felhasználó a meglévő rendszerben tudja böngészni az adatokat, míg az adminisztrátornak ezen felül lehetősége van szerkeszetni vagy akár törölni is. Az adatok REST APi-n keresztül érhetőek el.
 
 ## 2. Felhasználók
 A rendszert használók két csoportra bonthatóak:
@@ -42,13 +42,9 @@ F4.5 - Az oldalon lehetőség van törölni meglévő szereplőt.
 F5.1 - Az oldalon lehetőség van API klucsot generálni.
 F5.2 - Az oldalon lehetőség van belépni az adminisztrátoroknak.
 
-
 ## 4. Az alkalmazás felépítése
-
-
-
+Az alkalmazás REST API-n keresztül érhető el.
+Minden funckiónak funkciónak külön URL-je van, ahol a megadott paraméterek segítségével lehet a műveleteket végrehajtani. A kérésekre adott válaszok JSON formátumban érkeznek a szerverről.
 
 ## 5. Az alkalmazás kezdeti beállításai
 Az alkalmazáshoz mellékelve van egy adatbázis, amelyet importálva már kezdeti adatokkal használható a rendszer.
-
-
