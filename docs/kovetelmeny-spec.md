@@ -1,5 +1,5 @@
+# Követelményspecifikáció
 
-<<<<<<< Updated upstream
 =======
 ## 1. Vezetői összefoglaló
 
@@ -46,6 +46,19 @@ Az open-source kivitelezésnek köszönhetően, remélhetőleg a jövőben enné
 
 ## 7. Követelménylista
 
+| Modul     | Verzió | Név                                                                  | Kifejtés                                                                                                               |
+| --------- | ------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Adatbázis | V1.0   | Api kulcsok tárolása                                                 | Adatbázis a generálandó API kulcsok tárolására                                                                         |
+| API       | V1.0   | GET végpont API kulcs generálásához                                  | Api kulcs generálása és mentés az adatbázisba                                                                          |
+| Adatbázis | V2.0   | Zsánerek tárolása                                                    | Adatbázis a zsánerek tárolására.                                                                                       |
+| Adatbázis | V3.0   | Színészek tárolása                                                   | Adatbázis a színészek tárolására.                                                                                      |
+| Adatbázis | V4.0   | Rendezők tárolása                                                    | Adatbázis a rendezők tárolására.                                                                                       |
+| Adatbázis | V5.0   | Filmek tárolása, összekötés a zsánerekkel, színészekkel, rendezőkkel | Adatbázis a filmek tárolására. A meglővő táblák összekapcsolása, hogy a komplex lekérdezések megvalósíthatóak legyenek |
+| API       | V2.0   | CRUD műveletek a zsánerekhez                                         | Create,Read,Update,Delete műveletek/végpontok a zsánerekhez                                                            |
+| API       | V3.0   | CRUD műveletek a színészekhez                                        | Create,Read,Update,Delete műveletek/végpontok a színészekhez                                                           |
+| API       | V4.0   | CRUD műveletek a rendezőkhöz                                         | Create,Read,Update,Delete műveletek/végpontok a rendezőkhöz                                                            |
+| API       | V5.0   | CRUD műveletek a filmekhez                                           | Create,Read,Update,Delete műveletek/végpontok a filmekhez                                                              |
+=======
 | ID   | Modul     | Verzió | Név                                                                  | Kifejtés                                                                                                               |
 | ---- | --------- | ------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | DB0  | Adatbázis | V1.0   | Api kulcsok tárolása                                                 | Adatbázis a generálandó API kulcsok tárolására                                                                         |
@@ -65,4 +78,4 @@ Az open-source kivitelezésnek köszönhetően, remélhetőleg a jövőben enné
 - **CRUD**: Create, Read, Update, Delete műveletek támogatása
 - **Endpoint/végpont**: Az az "URL", amit meghívva kérést indítunk az API szervernek
 - **URL**: Uniform Resource Locator, ("webcím")
->>>>>>> Stashed changes
+=======
