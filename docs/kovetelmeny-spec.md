@@ -1,5 +1,6 @@
 # Követelményspecifikáció
 
+=======
 ## 1. Vezetői összefoglaló
 
 - Egy open-source film API létrehozása hallgatói munkák támogatásához. Az API egy 1 hónapig érvényes API Kulccsal használható. Lehetőség van több száz film adatainak listázására, egyes filmek részleteinek lekérdezésére, rendezők, színészek és zsánerek lekérdezésére.
@@ -57,6 +58,19 @@ Az open-source kivitelezésnek köszönhetően, remélhetőleg a jövőben enné
 | API       | V3.0   | CRUD műveletek a színészekhez                                        | Create,Read,Update,Delete műveletek/végpontok a színészekhez                                                           |
 | API       | V4.0   | CRUD műveletek a rendezőkhöz                                         | Create,Read,Update,Delete műveletek/végpontok a rendezőkhöz                                                            |
 | API       | V5.0   | CRUD műveletek a filmekhez                                           | Create,Read,Update,Delete műveletek/végpontok a filmekhez                                                              |
+=======
+| ID   | Modul     | Verzió | Név                                                                  | Kifejtés                                                                                                               |
+| ---- | --------- | ------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| DB0  | Adatbázis | V1.0   | Api kulcsok tárolása                                                 | Adatbázis a generálandó API kulcsok tárolására                                                                         |
+| API0 | API       | V1.0   | GET végpont API kulcs generálásához                                  | Api kulcs generálása és mentés az adatbázisba                                                                          |
+| DB1  | Adatbázis | V2.0   | Zsánerek tárolása                                                    | Adatbázis a zsánerek tárolására.                                                                                       |
+| DB2  | Adatbázis | V3.0   | Színészek tárolása                                                   | Adatbázis a színészek tárolására.                                                                                      |
+| DB3  | Adatbázis | V4.0   | Rendezők tárolása                                                    | Adatbázis a rendezők tárolására.                                                                                       |
+| DB4  | Adatbázis | V5.0   | Filmek tárolása, összekötés a zsánerekkel, színészekkel, rendezőkkel | Adatbázis a filmek tárolására. A meglővő táblák összekapcsolása, hogy a komplex lekérdezések megvalósíthatóak legyenek |
+| API1 | API       | V2.0   | CRUD műveletek a zsánerekhez                                         | Create,Read,Update,Delete műveletek/végpontok a zsánerekhez                                                            |
+| API2 | API       | V3.0   | CRUD műveletek a színészekhez                                        | Create,Read,Update,Delete műveletek/végpontok a színészekhez                                                           |
+| API3 | API       | V4.0   | CRUD műveletek a rendezőkhöz                                         | Create,Read,Update,Delete műveletek/végpontok a rendezőkhöz                                                            |
+| API4 | API       | V5.0   | CRUD műveletek a filmekhez                                           | Create,Read,Update,Delete műveletek/végpontok a filmekhez                                                              |
 
 ## 9. Fogalomszótár
 
@@ -64,3 +78,4 @@ Az open-source kivitelezésnek köszönhetően, remélhetőleg a jövőben enné
 - **CRUD**: Create, Read, Update, Delete műveletek támogatása
 - **Endpoint/végpont**: Az az "URL", amit meghívva kérést indítunk az API szervernek
 - **URL**: Uniform Resource Locator, ("webcím")
+=======
