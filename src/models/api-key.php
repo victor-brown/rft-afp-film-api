@@ -11,6 +11,36 @@ class ApiKey
     {
         $this->connection = $db;
     }
+
+
+    public function isValid($key)
+    {
+        $query = 'SELECT * 
+        FROM api_keys WHERE api_key = :api_key LIMIT 0,1';
+
+        $stmt = $this->connection->prepare($query);
+        $stmt->bindParam(':api_key', $key);
+
+
+        try {
+            $stmt->execute();
+
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            $this->id = $row['id'];
+            $this->api_key = $row['api_key'];
+            $this->valid_until = $row['valid_until'];
+        } catch (\Throwable $th) {
+            return false;
+        }
+
+        if (strtotime($this->valid_until) > strtotime(date('Y-m-d'))) {
+            return true;
+        }
+
+        return false;
+    }
+
     public function create()
     {
         $query = 'INSERT INTO api_keys SET api_key = :api_key, valid_until = :valid_until';
