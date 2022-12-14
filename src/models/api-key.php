@@ -64,4 +64,19 @@ class ApiKey
         return json_encode(array("API_KEY" => $this->api_key, "valid" => $this->valid_until));
 
     }
+
+    public function authenticate($headers)
+    {
+        foreach ($headers as $header => $value) {
+            if ($header == "X-Api-Key") {
+                if ($this->isValid($value)) {
+                    return true;
+                }
+
+                http_response_code(401);
+                echo json_encode(array('message' => 'Unathorized'));
+                return false;
+            }
+        }
+    }
 }
