@@ -38,3 +38,10 @@ Eszköz: Postman
 - Body kitöltésének elhagyása
 - Kérés elküldése
 - Bad request válasz
+
+## Read
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- Kérés elküldése
+- Sikeres válasz 200
