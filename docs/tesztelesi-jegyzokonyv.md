@@ -152,3 +152,20 @@ Eszköz: Postman
 - Get kérés kiválasztása
 - Kérés elküldése
 - Sikeres válasz 200
+
+## Read-Single
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- létező ID paraméter megadása
+- Kérés elküldése
+- Sikeres válasz 200
+
+---
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- létező ID paraméter megadása
+- Kérés elküldése
+- Sikeres válasz 200
+  - de üres a body
