@@ -9,6 +9,25 @@ include_once '../../models/director.php';
 include_once '../../models/api-key.php';
 
 $isAuth = $apiKey->authenticate($headers);
+$database = new Database();
+$db = $database->connect();
+$apiKey = new ApiKey($db);
+$headers = apache_request_headers();
 
 if (!$isAuth)
     return;
+
+$director = new Director($db);
+
+$director->id = isset($_GET['id']) ? $_GET['id'] : die();
+
+if ($director->delete()) {
+    echo json_encode(
+        array('deleted' => $director->id)
+    );
+    return;
+} else {
+    http_response_code(400);
+    echo json_encode(array('message' => 'Bad Request'));
+    return;
+}
