@@ -8,11 +8,12 @@ include_once '../../config/database.php';
 include_once '../../models/director.php';
 include_once '../../models/api-key.php';
 
-$isAuth = $apiKey->authenticate($headers);
 $database = new Database();
 $db = $database->connect();
-$apiKey = new ApiKey($db);
 $headers = apache_request_headers();
+$apiKey = new ApiKey($db);
+$isAuth = $apiKey->authenticate($headers);
+
 
 if (!$isAuth)
     return;
