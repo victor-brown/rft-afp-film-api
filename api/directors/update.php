@@ -8,3 +8,9 @@ header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,
 include_once '../../config/database.php';
 include_once '../../models/director.php';
 include_once '../../models/api-key.php';
+
+
+$isAuth = $apiKey->authenticate($headers);
+
+if (!$isAuth)
+    return;
