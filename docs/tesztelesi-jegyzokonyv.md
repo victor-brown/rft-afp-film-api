@@ -48,6 +48,22 @@ Eszköz: Postman
 - Kérés elküldése
 - Sikeres válasz 200
 
+## Delete
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Sikeres válasz 'deleted'
+
+---
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Bad request válasz
+
 # Geres
 
 ## Create
@@ -83,6 +99,23 @@ Eszköz: Postman
 - Kérés elküldése
 - Sikeres válasz 200
 
+
+## Delete
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Sikeres válasz 'deleted'
+
+---
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Bad request válasz
+
 # Stars
 
 ## Create
@@ -117,6 +150,23 @@ Eszköz: Postman
 - Get kérés kiválasztása
 - Kérés elküldése
 - Sikeres válasz 200
+
+
+## Delete
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Sikeres válasz 'deleted'
+
+---
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Bad request válasz
 
 # Movies
 
@@ -169,3 +219,20 @@ Eszköz: Postman
 - Kérés elküldése
 - Sikeres válasz 200
   - de üres a body
+
+
+## Delete
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Sikeres válasz 'deleted'
+
+---
+
+- Postman applikációban a megfelelő URL megadása
+- Get kérés kiválasztása
+- id paraméter megadása
+- Kérés elküldése
+- Bad request válasz
